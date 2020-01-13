@@ -96,7 +96,7 @@ input {
 
 button {
 	padding: 16px 32px;
-	background: linear-gradient(120deg, #12c2e9, #c471ed, #f64f59);
+	background: -webkit-linear-gradient(120deg, #12c2e9, #c471ed, #f64f59);
 	-webkit-background-clip: text;
 	text-align: left;
 	font-size: inherit;
