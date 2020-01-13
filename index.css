@@ -95,13 +95,13 @@ input {
 }
 
 button {
-	padding: 16px 32px;
-	background: -webkit-linear-gradient(120deg, #12c2e9, #c471ed, #f64f59);
+	background: -webkit-linear-gradient(#12c2e9, #c471ed, #f64f59);
+	-webkit-text-fill-color: transparent;
 	-webkit-background-clip: text;
 	text-align: left;
 	font-size: inherit;
+	padding: 16px 32px;
 	cursor: pointer;
-	-webkit-text-fill-color: transparent;
 }
 
 @media all and (max-width: 720px) {
