@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset='utf-8'>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, shrink-to-fit=no">
+
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+<title>iURL - Simple and free long URL shortening service 😍</title>
+<meta name="description" content="URL shortener with support for custom alias">
+
+<script src="head.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Poppins:700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+<link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+
+<main class="main">
+<form class="form" action="javascript:void(0);">
+<input type="url" id="urlinput" placeholder="paste a long url" label="paste a long url" autocomplete="off" required>
+<input type="text" maxlength="20" id="custominput" placeholder="custom alias" label="custom alias" autocomplete="off">
+<button id="sbtn" type="submit" aria-label="Shorten">
+<span id="status"><i class="lab la-telegram"></i> shorten</span>
+</button>
+</form>
+<div id="erbox"></div>
+<div class="form" id="output" style="display: none">
+<div id="alias"></div>
+<input type="text" id="shortenedURL" placeholder="Output" label="short url">
+<div id="sucess"></div>
+</div>
+<div class="flex"></div>
+<footer>
+<div class="flex"></div>
+<p style="height: 24px; margin-left:16px; margin-right: 13px; color:#bbb;">iURL &copy; 2020</p>
+</footer>
+</main>
+
+<script src="index.js"></script>
+
+</body>
+</html>
