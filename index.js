@@ -79,12 +79,13 @@ const copyer = (containerid) => {
 const send_request = (url) => {
 	const myurl = url
 	const address = `${endpoint}/${window.location.hash.substr(1)}`
+	const hash = window.location.hash.substr(1)
 	pushJSON(address, myurl)
 	urlinput.value = ''
 	custominput.value = ''
 	status.innerHTML = '<i class="lab la-telegram"></i> shorten'
 	output.style.display = 'block'
-	shortenedURL.value = window.location.href
+	shortenedURL.value = `https://iurl.uk/#${hash}`
 	copyer('shortenedURL')
 }
 const sleep = ms => new Promise(resolve => setTimeout(resolve, ms))
