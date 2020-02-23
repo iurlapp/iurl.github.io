@@ -75,7 +75,7 @@ input {
 
 #erbox {
 	padding: 16px 32px;
-	color: #2e3c63;
+	color: #f22357;
 	animation: fadeout;
 	animation-fill-mode: forwards;
 }
@@ -91,7 +91,7 @@ input {
 }
 
 button {
-	color:#2e3c63;
+	color:#0066ff;
 	background-color:transparent;
 	text-align: left;
 	font-size: inherit;
