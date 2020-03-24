@@ -1,0 +1,90 @@
+:root {
+	--font-color: #333;
+	--bg-color: #fff;
+}
+
+[data-theme="dark"] {
+	--font-color: #fff;
+	--bg-color: #15161b;
+}
+
+* {
+	box-sizing: border-box;
+	outline: 0;
+	border: 0;
+}
+
+body {
+	margin: 0;
+	background-color: var(--bg-color);
+	color: var(--font-color);
+	-webkit-tap-highlight-color: transparent;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+a {
+	display: inline-flex;
+	color: inherit;
+	text-decoration: none;
+}
+
+.form {
+	width: 100%;
+}
+
+input {
+	width: 100%;
+	background-color: var(--bg-color);
+	color: var(--font-color);
+}
+
+.theme-switch {
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 32px;
+}
+
+.theme-switch input {
+	display: none;
+}
+
+.slider {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: #ccc;
+	cursor: pointer;
+	transition: .2s;
+}
+
+.slider:before {
+	position: absolute;
+	bottom: 4px;
+	left: 4px;
+	width: 24px;
+	height: 24px;
+	background-color: #fff;
+	content: "";
+	transition: .2s;
+}
+
+input:checked + .slider {
+	background-color: #58DE71;
+}
+
+input:checked + .slider:before {
+	transform: translateX(28px);
+}
+
+.slider.round {
+	border-radius: 32px;
+}
+
+.slider.round:before {
+	border-radius: 100%;
+}
