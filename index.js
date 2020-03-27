@@ -97,7 +97,7 @@ let longurl = url;
 let shorturl = window.location.hash.substr(1)
 let address = endpoint + "/";
 pushJSON(address, longurl, shorturl);
-// urlinput.value = ''
+urlinput.value = ''
 status.innerHTML = '<i class="lab la-telegram"></i> shorten'
 output.style.display = 'block'
 document.getElementById('shortenedURL').value = window.location.href;
@@ -106,7 +106,7 @@ copyer("shortenedURL");
 
 let sleep = ms => new Promise(resolve => setTimeout(resolve, ms))
 let shorturl = async () => {
-	status.innerHTML = '<i class="lab la-telegram"></i> shortening...'
+	status.innerHTML = '<i class="las la-sync"></i> shortening...'
 	erbox.style.display = 'none'
 	output.style.display = 'none'
 	await sleep(150)

@@ -71,6 +71,10 @@ input {
 	font-size: inherit;
 }
 
+input:invalid {
+    box-shadow: none;
+}
+
 ::placeholder {
 	color: #b2b2b2;
 }
