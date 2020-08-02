@@ -1,0 +1,75 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+
+<link rel="stylesheet" href="css/app.css">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/tippy.css">
+<link rel="stylesheet" href="css/dark.css">
+
+<script src="js/jquery.min.js"></script>
+
+</head>
+<body>
+
+<article class="animate__animated animate__fadeIn">
+
+<noscript>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Please enable JavaScript to use iNote.
+</noscript>
+
+<textarea id="note" autofocus></textarea>
+
+<button style="margin-right:80px" onclick="download();" data-tippy="Download this note">
+<img src="data:image/png;base64,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"/>
+</button>
+
+<button data-tippy="Dark theme">
+<label class="theme-switch" for="checkbox">
+<input type="checkbox" id="checkbox" />
+<div class="slider round"></div>
+</label>
+</button>
+
+</article>
+
+<script>
+if ('serviceWorker' in navigator) {
+navigator.serviceWorker.register('upup.sw.min.js');
+}
+</script>
+
+<script src="js/upup.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/filesaver.min.js"></script>
+
+<script>
+function download() {
+var save = document.getElementById("note").value;
+var blob = new Blob([save], {
+type: "text/plain;charset=utf-8"
+});
+saveAs(blob, "iNote.txt");
+}
+</script>
+
+<script src="js/tippy.min.js"></script>
+<script src="js/dark.js"></script>
+
+<script>
+tippy.setDefaults({
+arrow: false,
+delay: 0,
+size: 'small',
+placement: 'left',
+animation: 'perspective',
+theme: 'light'
+})
+</script>
+
+</body>
+</html>
