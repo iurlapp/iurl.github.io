@@ -1,0 +1,18 @@
+@font-face {
+	font-family: 'NotoSansTC-Regular';
+	src:url(../font/NotoSansTC-Regular.otf);
+	font-weight: normal;
+	font-style: normal;
+}
+.tippy-tooltip.light-theme .tippy-backdrop {
+	background-color: #FFFFFF;
+	font: 400 16px 'NotoSansTC-Regular', sans-serif;
+	color: #8898AA;
+}
+.tippy-tooltip.light-theme {
+	background-color: #FFFFFF;
+	border: 1px solid #F2F2F2;
+	border-radius: 50px;
+	font: 400 16px 'NotoSansTC-Regular', sans-serif;
+	color: #8898AA;
+}
